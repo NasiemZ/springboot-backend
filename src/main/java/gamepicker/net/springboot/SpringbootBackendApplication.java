@@ -2,6 +2,7 @@ package gamepicker.net.springboot;
 
 import gamepicker.net.springboot.games.Game;
 import gamepicker.net.springboot.games.Genre;
+import gamepicker.net.springboot.games.Plattform;
 import gamepicker.net.springboot.repsoitory.GameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -20,45 +21,45 @@ public class SpringbootBackendApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		Game game1 = Game.builder()
 				.id(12)
-				.gerne(Genre.Action)
-				.name("Dark Souls 3")
-				.platform("playstation 4")
-				.rating(4.4).build();
+				.genre(Genre.Action)
+				.name("Dark Souls 2")
+				.platform(Plattform.XBOXONE)
+				.rating(4).build();
 
 		Game game0 = Game.builder()
 				.id(112)
-				.gerne(Genre.Action)
+				.genre(Genre.Action)
 				.name("Dark Souls 3")
-				.platform("playstation 4")
-				.rating(4.4).build();
+				.platform(Plattform.Boardgames)
+				.rating(4).build();
 
 		Game game2 = Game.builder()
 				.id(11)
-				.gerne(Genre.Action)
-				.name("Dark Souls 3")
-				.platform("playstation 1")
-				.rating(4.4).build();
+				.genre(Genre.Action)
+				.name("Mongo")
+				.platform(Plattform.PS5)
+				.rating(4).build();
 
 		Game game3 = Game.builder()
 				.id(13)
-				.gerne(Genre.Action)
-				.name("Dark Souls 3")
-				.platform("playstation 1")
-				.rating(4.4).build();
+				.genre(Genre.Action)
+				.name("Dark Souls")
+				.platform(Plattform.PC)
+				.rating(4).build();
 
 		Game game4 = Game.builder()
 				.id(15)
-				.gerne(Genre.Action)
-				.name("Dark Souls 3")
-				.platform("playstation 1")
-				.rating(4.4).build();
+				.genre(Genre.Action)
+				.name("GTA5")
+				.platform(Plattform.NintendoSwitch)
+				.rating(4).build();
 
 		Game game5 = Game.builder()
 				.id(199)
-				.gerne(Genre.Action)
-				.name("Dark Souls 3")
-				.platform("playstation 4")
-				.rating(4.4).build();
+				.genre(Genre.Action)
+				.name("Counter Strike")
+				.platform(Plattform.PS4)
+				.rating(4).build();
 
 
 		gameRepository.save(game1);

@@ -19,11 +19,11 @@ public class Game {
     @Column(name = "gamename",nullable = false)
     private String name;
 
-    @Column(name = "platform")
-    private String platform;
+    @Column(name = "plattform")
+    private Plattform platform;
 
-    @Column(name = "gerne",nullable = false)
-    private Genre gerne;
+    @Column(name = "genre",nullable = false)
+    private Genre genre;
 
     @Column(name = "rating")
     private double rating;
